@@ -81,7 +81,7 @@ body {
 
 @Media (max-width: 520px) {
     .header-area .links li a {
-        padding: 5px;
+        padding: 7px;
     }
     .header-area .links li:last-child {
         display: none;
@@ -612,7 +612,7 @@ body {
 
 @Media (max-width: 520px) {
     .contact .form-box input[type='submit'] {
-        width: 50%;
+        font-size: 14px;
     }
 }
 
