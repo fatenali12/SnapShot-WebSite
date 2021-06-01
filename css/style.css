@@ -81,7 +81,7 @@ body {
 
 @Media (max-width: 520px) {
     .header-area .links li a {
-        padding: 7px;
+        padding: 5px;
     }
     .header-area .links li:last-child {
         display: none;
@@ -608,6 +608,12 @@ body {
 .contact .form-box input[type='submit']:hover {
     background-color: #FFF;
     color: #e44c65;
+}
+
+@Media (max-width: 520px) {
+    .contact .form-box input[type='submit'] {
+        width: 50%;
+    }
 }
 
 
