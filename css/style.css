@@ -140,17 +140,6 @@
             border-bottom: 1px solid #ddd;
         }
     }
-    /* @Media (max-width: 520px) {
-        .header-area .links li a {
-            padding: 7px;
-        }
-        .header-area .links li:last-child {
-            display: none;
-        }
-        .header-area .links li a:hover {
-            font-size: 12px;
-        }
-    } */
     
     .home-img {
         width: 100%;
