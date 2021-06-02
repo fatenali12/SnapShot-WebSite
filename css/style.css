@@ -280,8 +280,6 @@
             height: 100%;
         }
         .about .img-box img {
-            /* width: 250px;
-            height: 250px; */
             position: absolute;
             top: 65px;
             left: 64px;
@@ -295,8 +293,6 @@
         .about .img-box img {
             top: 65px;
             left: 16px;
-            /* top: 65px;
-            left: 64px; */
         }
     }
     
@@ -425,6 +421,10 @@
         .about .team-imgs .team-para {
             font-size: 12px;
             padding: 0px 65px;
+        }
+        .about .about-box p,
+        h2 {
+            text-align: center;
         }
     }
     
@@ -642,7 +642,7 @@
     }
     
     .contact .form-box input[type='submit'] {
-        width: 46%;
+        width: 50%;
         background-color: #e44c65;
         padding: 15px;
         border: 0;
@@ -805,32 +805,9 @@
             text-align: center;
         }
         .footer-box h3 {
-            font-size: 12px;
-            letter-spacing: 2px;
-            margin-left: 22px;
-        }
-        .footer-box span {
-            padding: 16px 6px;
-            font-size: 13px;
-            margin-left: 21px;
-        }
-        .footer-box .subscribe {
-            padding-left: 38px;
-            padding-right: 0px;
-        }
-        .footer-box p {
-            line-height: 27px;
-        }
-        .footer-box .footer-content:after {
-            left: 142px;
-        }
-    }
-    
-    @Media (max-width: 520px) {
-        .footer-box h3 {
             font-size: 18px;
             letter-spacing: 1px;
-            margin-left: 26px;
+            margin-left: -14px;
             color: #e44c65;
         }
         .footer-box span {
@@ -839,8 +816,38 @@
             margin-left: 28px
         }
         .footer-box .subscribe {
+            padding-left: 22px;
+            padding-right: 45px;
+        }
+        .footer-box p {
+            line-height: 27px;
+        }
+        .footer-box .footer-content:after {
+            left: 142px;
+        }
+        .footer-box .footer-content:after {
+            display: none;
+        }
+        .footer-box form {
+            text-align: left;
+        }
+    }
+    
+    @Media (max-width: 520px) {
+        .footer-box h3 {
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-left: -40px;
+            color: #e44c65;
+        }
+        .footer-box span {
+            font-size: 14px;
+            padding: 16px 0;
+            margin-left: -42px
+        }
+        .footer-box .subscribe {
             padding-left: 0;
-            padding-right: 2px;
+            padding-right: 12px;
         }
         .footer-box p {
             line-height: 27px;
