@@ -147,6 +147,7 @@
         background-size: cover;
         background-position: center;
         height: 710px;
+        position: relative;
     }
     
     .overlay {
@@ -189,8 +190,10 @@
         border: 0;
         outline: none;
         letter-spacing: 2px;
-        margin-left: 40%;
-        margin-top: 20px;
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         cursor: pointer;
     }
     
@@ -205,9 +208,6 @@
         .home-img p {
             font-size: 20px;
             padding: 0px 35px;
-        }
-        .home-img button {
-            margin-left: 25%
         }
     }
     
@@ -289,7 +289,11 @@
     @Media (max-width: 520px) {
         .about .about-box {
             padding: 20px 25px;
+            text-align: center;
         }
+    }
+    
+    @Media (max-width: 385px) {
         .about .img-box img {
             top: 65px;
             left: 16px;
