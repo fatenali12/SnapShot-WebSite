@@ -79,7 +79,7 @@
             justify-content: flex-end;
             position: absolute;
             top: 24px;
-            left: 317px;
+            right: 12px;
         }
         .header-area .links-container .icon span {
             background-color: #333;
@@ -90,7 +90,7 @@
             width: 100%;
         }
         .header-area .links-container .icon span:nth-child(2) {
-            width: 60%;
+            width: 70%;
             text-align: center;
         }
         .header-area .links-container .icon span:last-child {
@@ -98,12 +98,12 @@
         }
         .header-area .links {
             list-style: none;
-            margin: 0;
+            margin: 8px;
             padding: 0;
             background-color: #FFF;
             position: absolute;
-            right: 4px;
-            min-width: 200px;
+            right: 0;
+            min-width: 250px;
             top: calc(100% + 10px);
             display: none;
             z-index: 1;
@@ -115,7 +115,7 @@
             border-color: transparent transparent #FFF transparent;
             position: absolute;
             top: -20px;
-            right: 30px;
+            right: 7px;
         }
         .header-area .links-container:hover .links {
             display: block;
@@ -140,17 +140,6 @@
             border-bottom: 1px solid #ddd;
         }
     }
-    /* @Media (max-width: 520px) {
-        .header-area .links li a {
-            padding: 7px;
-        }
-        .header-area .links li:last-child {
-            display: none;
-        }
-        .header-area .links li a:hover {
-            font-size: 12px;
-        }
-    } */
     
     .home-img {
         width: 100%;
@@ -283,26 +272,31 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            padding: 20px 25px;
-            margin-bottom: 90%;
+            padding-bottom: 25px;
+            margin-bottom: 80%;
         }
         .about .img-box {
             width: 96%;
             height: 100%;
         }
         .about .img-box img {
-            width: 200px;
-            height: 200px;
+            /* width: 250px;
+            height: 250px; */
             position: absolute;
             top: 65px;
-            left: 95px;
+            left: 64px;
         }
     }
     
     @Media (max-width: 520px) {
+        .about .about-box {
+            padding: 20px 25px;
+        }
         .about .img-box img {
             top: 65px;
             left: 16px;
+            /* top: 65px;
+            left: 64px; */
         }
     }
     
@@ -423,7 +417,7 @@
             height: 286px;
         }
         .about .team-imgs img {
-            width: 131px
+            width: 131px;
         }
         .about .team-imgs h2 {
             font-size: 19px;
@@ -648,7 +642,7 @@
     }
     
     .contact .form-box input[type='submit'] {
-        width: 40%;
+        width: 46%;
         background-color: #e44c65;
         padding: 15px;
         border: 0;
@@ -669,6 +663,7 @@
     .footer-box {
         padding-bottom: 60px;
         display: flex;
+        flex-wrap: wrap;
     }
     
     .footer-box div {
@@ -805,6 +800,10 @@
     }
     
     @Media (max-width: 767px) {
+        .footer-box div {
+            flex-basis: calc(100% / 2);
+            text-align: center;
+        }
         .footer-box h3 {
             font-size: 12px;
             letter-spacing: 2px;
@@ -829,17 +828,18 @@
     
     @Media (max-width: 520px) {
         .footer-box h3 {
-            font-size: 11px;
+            font-size: 18px;
             letter-spacing: 1px;
             margin-left: 26px;
+            color: #e44c65;
         }
         .footer-box span {
-            font-size: 10px;
+            font-size: 14px;
             padding: 16px 0;
             margin-left: 28px
         }
         .footer-box .subscribe {
-            padding-left: 36px;
+            padding-left: 0;
             padding-right: 2px;
         }
         .footer-box p {
@@ -848,15 +848,10 @@
         .footer-box .footer-content:after {
             display: none;
         }
-        .fa-facebook-square,
-        .fa-twitter-square,
-        .fa-vimeo-square {
-            display: none;
-        }
     }
     /* Starting Media Query*/
     
-    @Media (min-width: 576px) {
+    @Media (max-width: 576px) {
         .container {
             max-width: 540px;
         }
